@@ -1,0 +1,50 @@
+.main{
+    display: inline-flex;
+    justify-content: center;
+}
+.message{
+    margin: 15px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+.slider {
+    border-radius: 34px;	
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -13px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: 60px;
+  }
+
+.slider:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switcher:checked + .slider {
+    background-color: #2196F3;
+}
+      
+.switcher:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}

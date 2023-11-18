@@ -1,0 +1,74 @@
+.myinput {
+    position: relative;
+  }
+
+
+
+.input {
+  height: 20px;
+  width: 90%;
+  background: rgb(83, 83, 83);
+  border-style: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+  
+label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: rgb(163, 163, 163);
+    padding: 0 5px;
+    transition: top 0.3s;
+}
+  
+.input:focus ~ label {
+  top: -8px;
+  font-size: smaller;
+  background-color: rgb(36, 36, 36);
+  color: #006efd;
+}
+.input:focus{
+  background-color: rgb(36, 36, 36);
+}
+
+.error{
+  height: 20px;
+  width: 90%;
+  color: red;
+  border-color: red;
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
+  padding: 10px;
+}
+.error:focus ~ label {
+  top: -8px;
+  font-size: smaller;
+  background-color: rgb(36, 36, 36);
+  color: red;
+}
+.label-error{
+  position: absolute;
+    top: 10px;
+    left: 15px;
+    color: red;
+    padding: 0 5px;
+    transition: top 0.3s;
+}
+.error:focus{
+  outline: none;
+}
+
+.input:hover{
+  border-style: solid;
+  border-color: #006efd;
+}
+
+.input:hover ~ label {
+  color: #006efd;
+}
+label:hover ~ input {
+  border-style: solid;
+  border-color: #006efd;
+}
