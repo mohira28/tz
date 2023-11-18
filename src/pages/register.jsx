@@ -109,7 +109,7 @@ export const Register = () => {
                     label={errorPassMessage.length !== 0 ? errorPassMessage : 'Пароль'}  
                     labelConsists={consistsPassword} 
                     changer={password} 
-                    type='MainPassword'
+                    type='password'
                     error={passwordError}
                 />
                 <MyInput 
